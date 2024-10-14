@@ -1,0 +1,43 @@
+{% extends 'base.html' %} <!--index.html está herdando de base-->
+{% load static %}
+{% block content %}<!--Deve ser usado para qualquer template que tenha arquivos statics (imgs, js)-->
+  <!--Hero Area start-->
+    {% include 'hero.html' %} <!--inclui o conteúdo do hero.html aqui-->
+  <!--Hero Area end-->
+
+   <!-- Services Section Start -->
+  {% include 'services.html'%}
+  <!-- Services Section End -->
+
+    <!-- About Section start -->
+    {% include 'sobre.html' %}
+    <!-- About Section End -->
+
+    <!-- Features Section Start -->
+    {% include 'features.html' %}
+    <!-- Features Section End -->   
+
+    <!-- Team Section Start -->
+    {% include 'equipe.html' %}
+    <!-- Team Section End -->
+
+    <!-- Pricing section Start --> 
+        {% include 'preco.html' %}
+    <!-- Pricing Table Section End -->
+  
+    <!-- Testimonial Section Start -->
+        {% include 'depoimentos.html' %}
+    <!-- Testimonial Section End -->
+
+    <!-- Call To Action Section Start -->
+        {% include 'chamada.html' %}
+    <!-- Call To Action Section Start -->
+
+    <!-- Contact Section Start -->
+      {% include 'contato.html' %}
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+      {% include 'footer.html' %}
+    <!-- Footer Section End -->
+    {% endblock %}
